@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.about {
+    background-image: linear-gradient(to left, variaveis.$corRoxa, variaveis.$corFundoLink);
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 100px;
+    align-items: center;
+
+    &__img {
+        max-width: 500px;
+        margin-right: 20px;
+
+        img {
+            border-radius: 6px;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        color: variaveis.$corLetra;
+        
+        
+
+        &__title {
+            text-align: center;
+            font-size: 26px;
+            font-family: moodern, sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        &__text {
+            text-align: justify;
+        }
+    }
+}
