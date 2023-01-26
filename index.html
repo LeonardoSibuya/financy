@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="body">
     <div class="hero">
@@ -73,7 +74,7 @@
                 Planos de assinatura
             </h2>
             <div class="signature__plans">
-                <div class="signature__plans__item">
+                <div class="signature__plans__item" data-aos="fade-right">
                     <h3 class="signature__plans__item__title">
                         Plano Mensal
                     </h3>
@@ -95,7 +96,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="signature__plans__item signature__plans__item--best">
+                <div class="signature__plans__item signature__plans__item--best" data-aos="fade-left">
                     <div class="signature__plans__item__title">
                         <img src="dist/images/star-icon.png" alt="">
                         <h3>Plano anual</h3>
@@ -124,5 +125,8 @@
             </button>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="dist/js/main.js"></script>
 </body>
 </html>
