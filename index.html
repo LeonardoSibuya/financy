@@ -35,6 +35,11 @@
                             </a>
                         </li>
                         <li class="hero__nav__list__item">
+                            <a class="hero__nav__list__item__link" href="#market">
+                                Market
+                            </a>
+                        </li>
+                        <li class="hero__nav__list__item">
                             <a class="hero__nav__list__item__link" href="">
                                 FAQ
                             </a>
@@ -74,7 +79,7 @@
                 Planos de assinatura
             </h2>
             <div class="signature__plans">
-                <div class="signature__plans__item" data-aos="fade-right">
+                <div class="signature__plans__item" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1800">
                     <h3 class="signature__plans__item__title">
                         Plano Mensal
                     </h3>
@@ -96,7 +101,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="signature__plans__item signature__plans__item--best" data-aos="fade-left">
+                <div class="signature__plans__item signature__plans__item--best" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="signature__plans__item__title">
                         <img src="dist/images/star-icon.png" alt="">
                         <h3>Plano anual</h3>
@@ -124,6 +129,44 @@
                 Assinar
             </button>
         </div>
+    </div>
+
+    <div class="container">
+        <section class="market" id="market">
+            <h2 class="market__title">
+                Acompanhe suas ações em tempo real
+            </h2>
+            <div class="market__acao" data-tab-id="bloqueado">
+                <h3 class="market__acao__title">
+                    <img class="image" src="dist/images/star-icon.png" alt="">
+                    Ibovespa (IBOV)
+                </h3>
+                <div class="market__acao__variation">
+                    <div class="market__acao__variation__atual">
+                        Variação atual:
+                    </div>
+                    <span class="market__acao__variation__number" id="ibov"></span>
+                </div>
+            </div>
+            <div class="market__acao market__acao--is-disable" data-tab-id="variations">
+                <div class="market__acao__bloq">
+                    <img class="market__acao__bloq__img" src="dist/images/cadeado.png" alt="">
+                    <p class="market__acao__bloq__msg">
+                        Para poder acompanhar mais ações, e com um conteudo completo, assine já nossa plataforma!
+                    </p>
+                </div>
+            </div>
+            <div class="market__buttons">
+                <button class="market__buttons__verMais market__buttons__verMais--is-active" data-tab-button="variations">
+                    Indice
+                </button>
+                <button class="market__buttons__verMais" data-tab-button="bloqueado">
+                    Ver + ações
+                </button>
+            </div>
+
+
+        </section>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -2,10 +2,10 @@
 
 .signature {
     margin-top: 250px;
-    margin-bottom: 250px;
     background-image: linear-gradient(to left, variaveis.$corRoxa, variaveis.$corFundoLink);
     padding: 24px;
     border-radius: 16px;
+    box-shadow: 1px 1px 5px variaveis.$corRoxa;
 
     &__title {
         text-align: center;
@@ -90,6 +90,7 @@
         width: 20%;
         cursor: pointer;
         letter-spacing: 3px;
+        font-weight: bolder;
 
     &:hover {
         color: variaveis.$corFundoLinkHover;
