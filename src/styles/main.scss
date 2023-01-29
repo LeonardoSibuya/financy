@@ -3,6 +3,9 @@
 @use 'about';
 @use 'signature';
 @use 'market';
+@use 'faq';
+@use 'nav';
+@use 'form';
 
 @font-face {
     font-family: moodern;
@@ -31,4 +34,5 @@
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    padding-top: 20px;
 }

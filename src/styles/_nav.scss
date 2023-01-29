@@ -1,0 +1,42 @@
+@use 'variaveis';
+
+.nav {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+        padding-bottom: 24px;
+        border-radius: 0 0px 45px 45px;
+        background-image: linear-gradient(to right, variaveis.$corRoxa, variaveis.$corFundoLink);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 63.2%;
+        margin: 0 auto;
+
+        &__item {
+            margin-right: 36px;                
+
+            &__link {
+                padding: 8px;
+                border-radius: 8px 8px 0;
+                text-decoration: none;
+                background-color: lighten(variaveis.$corFundoLinkHover, 20%);
+                color: variaveis.$corLetra;
+                transition: .5s ease;
+
+                &:hover {
+                    color: variaveis.$corFundoLinkHover;
+                    background-color: variaveis.$corLetra;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
