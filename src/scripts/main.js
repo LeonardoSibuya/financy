@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('[data-tab-button]')
-    const questions = document.querySelectorAll('[data-faq-question]')
+    const buttons = document.querySelectorAll('[data-tab-button]');
+    const questions = document.querySelectorAll('[data-faq-question]');
+
+    const form = document.getElementById('form-cadastro');
+    const msgSucesso = document.getElementById('msg-sucesso')
+    const inputNome = document.getElementById('name')
+    const inputEmail = document.getElementById('mail')
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        let nome = inputNome.value
+        let email = inputEmail.value 
+
+        if ((nome.length >= 3) && (email.length >= 4)) {
+            msgSucesso.classList.add('form__info__formulario__success--active')
+        } else {
+            alert('Por favor, preencha os dados corretamente')
+            msgSucesso.classList.remove('form__info__formulario__success--active')
+        }
+    })
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao) {

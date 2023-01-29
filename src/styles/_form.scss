@@ -5,11 +5,16 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 250px;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
     background-image: linear-gradient(to left, variaveis.$corRoxa, variaveis.$corFundoLink);
     padding: 24px;
     border-radius: 16px;
     box-shadow: 1px 1px 5px variaveis.$corRoxa;
+
+    @media (max-width: 767px) {
+        margin-top: 150px;
+        display: block;
+    }
 
     &__info {
         padding-left: 20px;
@@ -21,6 +26,12 @@
         letter-spacing: 2px;
         margin-bottom: 36px;
         text-shadow: 1px 1px 1px #000;
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
         }
 
         &__text {
@@ -28,6 +39,10 @@
             font-size: 16px;
             margin-bottom: 24px;
             font-style: italic;
+
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
         }
 
         &__formulario {
@@ -36,6 +51,11 @@
                 color: variaveis.$corLetra;
                 font-weight: bold;
                 padding-left: 6px;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                    padding-left: 0;
+                }
             }
 
             &__input {
@@ -73,18 +93,52 @@
                 letter-spacing: 3px;
                 margin: auto;
 
+                @media (max-width: 767px) {
+                    padding: 12px;
+                    margin-top: 40px;
+                    font-size: 16px;
+                    width: 80%;
+                }
+
                 &:hover {
                     color: variaveis.$corFundoLinkHover;
                     background-color: variaveis.$corLetra;
                     letter-spacing: 12px;
                     width: 70%;
+
+                    @media (max-width: 767px) {
+                        width: 100%;
                     }
+                    }
+            }
+
+            &__success {
+                color: variaveis.$corSuccess;
+                display: block;
+                text-align: center;
+                margin-top: 15px;
+                letter-spacing: 2px;
+                display: none;
+
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+
+                &--active {
+                    display: block;
+                }
             }
         }
     }
 
     &__image {
         max-width: 400px;
+
+        @media (max-width: 767px) {
+            max-width: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
         
 
         &__img {

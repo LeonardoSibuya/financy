@@ -28,6 +28,10 @@
     max-width: 100%;
     min-height: 100vh;
     height: 100%;
+
+    @media (max-width: 767px) {
+        background-attachment: fixed;
+    }
 }
 
 .container {
@@ -35,4 +39,14 @@
     max-width: 960px;
     width: 100%;
     padding-top: 20px;
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 80%;
+        width: 100%;
+        margin: 0 auto;
+    }
 }

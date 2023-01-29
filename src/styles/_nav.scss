@@ -7,6 +7,25 @@
     max-width: 100%;
     width: 100%;
 
+    @media (max-width: 767px) {
+        .nav {
+            &__list {
+                padding: 6px;
+                padding-bottom: 16px;
+                width: 100%;
+    
+                &__item {
+                    margin-right: 16px;
+                    
+                    &__link {
+                        padding: 4px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
     &__list {
         display: flex;
         justify-content: center;
@@ -14,9 +33,6 @@
         padding-bottom: 24px;
         border-radius: 0 0px 45px 45px;
         background-image: linear-gradient(to right, variaveis.$corRoxa, variaveis.$corFundoLink);
-        background-position: bottom;
-        background-size: cover;
-        background-repeat: no-repeat;
         width: 63.2%;
         margin: 0 auto;
 

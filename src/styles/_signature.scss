@@ -7,6 +7,10 @@
     border-radius: 16px;
     box-shadow: 1px 1px 5px variaveis.$corRoxa;
 
+    @media (max-width: 767px) {
+        margin-top: 150px;
+    }
+
     &__title {
         text-align: center;
         color: variaveis.$corLetra;
@@ -15,18 +19,35 @@
         letter-spacing: 2px;
         margin-bottom: 36px;
         text-shadow: 1px 1px 1px #000;
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
     }
 
     &__plans {
         display: flex;
         justify-content: space-around;
+
+        @media (max-width: 767px) {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
         
 
         &__item {
+            text-align: center;
             color: variaveis.$corLetra;
             background-color: lighten(variaveis.$corFundoLinkHover, 5%);
             padding: 36px;
             border-radius: 6px;
+
+            @media (max-width: 767px) {
+                padding: 16px;
+                margin-bottom: 24px;
+            }
 
             &--best {
                 background-color: lighten(variaveis.$corFundoLinkHover, 20%);
@@ -50,11 +71,19 @@
                 font-size: 24px;
                 margin-bottom: 12px;
                 text-shadow: 1px 1px 1px #000;
+
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
             }
 
             &__text {
                 margin-bottom: 16px;
                 text-decoration: underline;
+                
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
             }
 
             &__list {
@@ -65,6 +94,10 @@
                     letter-spacing: 3px;
                     margin-bottom: 8px;
                     font-size: 12px;
+                    
+                    @media (max-width: 767px) {
+                        font-size: 8px;
+                    }
 
                     span {
                         text-decoration: line-through;
@@ -92,11 +125,22 @@
         letter-spacing: 3px;
         font-weight: bolder;
 
+        @media (max-width: 767px) {
+            padding: 12px;
+            margin-top: 40px;
+            font-size: 16px;
+            width: 80%;
+        }
+
     &:hover {
         color: variaveis.$corFundoLinkHover;
         background-color: variaveis.$corLetra;
         letter-spacing: 16px;
         width: 35%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
         }
     } 
 }

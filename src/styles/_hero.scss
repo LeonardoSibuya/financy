@@ -8,6 +8,38 @@
     height: 200px;
     position: relative;
 
+    @media (max-width: 767px) {
+        .hero {
+            &__content {
+                display: block;
+                margin: 0 auto;
+                padding: 0;
+
+                &__title {
+                    &__h1 {
+                        font-size: 30px;
+                        margin-bottom: 5px;
+                    }
+            
+                    &__subtitle {
+                        font-size: 14px;
+                    }
+                }
+            
+                    &__image {
+                        max-width: 150px;
+                        margin: 0 auto;
+                        margin-top: 24px;
+            
+                        &__img {
+                            width: 100%;
+                        }
+                    }
+            }
+        }
+
+    }
+
     &::before {
         position: absolute;
         top: 0;

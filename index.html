@@ -19,7 +19,7 @@
                     <h1 class="hero__content__title__h1">
                         FinancY
                     </h1>
-                    <p class="hero__title__content__subtitle">
+                    <p class="hero__content__title__subtitle">
                         A melhor plataforma financeira e indenpendente que você já viu
                     </p>
                 </div>
@@ -53,7 +53,7 @@
                 </a>
             </li>
             <li class="nav__list__item">
-                <a class="nav__list__item__link" href="">
+                <a class="nav__list__item__link" href="#newsletter">
                     Newsletter
                 </a>
             </li>
@@ -94,16 +94,16 @@
                     </p>
                     <ul class="signature__plans__item__list">
                         <li class="signature__plans__item__list__itens">
-                            Beneficio
+                            Variação das ações
                         </li>
                         <li class="signature__plans__item__list__itens">
-                            Beneficio
+                            Filtros de estudos
                         </li>
                         <li class="signature__plans__item__list__itens">
-                            <span>Beneficio</span>
+                            <span>Ações ilimitadas</span>
                         </li>
                         <li class="signature__plans__item__list__itens">
-                            <span>Beneficio</span>
+                            <span>Filtros exlusivos</span>
                         </li>
                     </ul>
                 </div>
@@ -117,16 +117,16 @@
                     </p>
                     <ul class="signature__plans__item__list">
                         <li class="signature__plans__item__list__itens">
-                            Beneficio
+                            Variação das ações
                         </li>
                         <li class="signature__plans__item__list__itens">
-                            Beneficio
+                            Filtros de estudos
                         </li>
                         <li class="signature__plans__item__list__itens">
-                            Beneficio
+                            Ações ilimitadas
                         </li>
                         <li class="signature__plans__item__list__itens">
-                            Beneficio
+                            Filtros exlusivos
                         </li>
                     </ul>
                 </div>
@@ -187,54 +187,46 @@
                     <div class="faq__questions__item__resposta">
                         <p>O Financy oferece:</p>
 
-                    <p>• Experiência premium sem intervalos comerciais.</p>
+                    <p>• Notícias e informações 24h por dia sobre o mercado financeiro.</p>
 
-                    <p>• As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.</p>
+                    <p>• Acompanhe em tempo real suas ações preferidas, com filtros de informações que irão te ajudar em seus investimentos</p>
 
-                    <p>• Groupwatch: assista junto com amigos ou familiares, mesmo separados.</p>
-
-                    <p>• Downloads ilimitados em até 10 dispositivos compatíveis.</p>
+                    <p>• Desconto na contratação da maior plataforma de trade do Brasil.</p>
                     </div>
                 </li>
 
                 <li class="faq__questions__item">
                     <div class="faq__questions__item__pergunta" data-faq-question>
-                        O que está incluso?
+                        Formas de pagamento disponíveis?
                     </div>
                     <div class="faq__questions__item__resposta">
-                        <p>O Financy oferece:</p>
+                        <p>O Financy aceita:</p>
 
-                    <p>• Experiência premium sem intervalos comerciais.</p>
+                    <p>• Boleto bancário.</p>
 
-                    <p>• As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.</p>
+                    <p>• Cartões de crédito e débito.</p>
 
-                    <p>• Groupwatch: assista junto com amigos ou familiares, mesmo separados.</p>
-
-                    <p>• Downloads ilimitados em até 10 dispositivos compatíveis.</p>
+                    <p>• PIX.</p>
                     </div>
                 </li>
 
                 <li class="faq__questions__item">
                     <div class="faq__questions__item__pergunta" data-faq-question>
-                        O que está incluso?
+                        Qual o tempo de acesso disponível a plataforma?
                     </div>
                     <div class="faq__questions__item__resposta">
                         <p>O Financy oferece:</p>
 
-                    <p>• Experiência premium sem intervalos comerciais.</p>
+                    <p>• De acordo com o plano de assinatura que você escolher, terá o acesso 24h por dia, até o final de sua assinatura.</p>
 
-                    <p>• As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.</p>
-
-                    <p>• Groupwatch: assista junto com amigos ou familiares, mesmo separados.</p>
-
-                    <p>• Downloads ilimitados em até 10 dispositivos compatíveis.</p>
+                    <p>• Renovando a assinatura, já sendo assinante, terá desconto de 10% para próxima assinatura.</p>
                     </div>
                 </li>
             </ul>
         </section>
     </div>
 
-    <div class="container">
+    <div class="container" id="newsletter">
         <div class="form">
             <div class="form__info">
                 <h2 class="form__info__title">
@@ -243,13 +235,14 @@
                 <p class="form__info__text">
                     Receba novidades do mercado financeiro diariamente <br> em seu e-mail, fácil, rápido e sem custos! 
                 </p>
-                <form class="form__info__formulario">
+                <form class="form__info__formulario" id="form-cadastro">
                     <label for="name" class="form__info__formulario__label">Nome:</label>
-                    <input type="text" id="name" class="form__info__formulario__input">
+                    <input type="text" id="name" class="form__info__formulario__input" required>
                     <br>
                     <label for="mail" class="form__info__formulario__label">E-mail:</label>
-                    <input type="email" id="mail" class="form__info__formulario__input">
+                    <input type="email" id="mail" class="form__info__formulario__input" required>
                     <button type="submit" class="form__info__formulario__botao">Cadastrar</button>
+                    <span class="form__info__formulario__success" id="msg-sucesso">Cadastrado com sucesso!</span>
                 </form>
             </div>
             <div class="form__image">
