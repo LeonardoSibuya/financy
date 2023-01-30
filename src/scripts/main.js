@@ -37,15 +37,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     AOS.init();
-    const endpoint = 'https://api.github.com/users/leonardoSibuya'
+
+    const coins = 'USD-BRL'
+    const endpoint = `https://economia.awesomeapi.com.br/last/${coins}`
     
     fetch(endpoint)
     .then(function(resposta) {
         return resposta.json()
     })
     .then(function(json) {
-        const ibovVariation = document.getElementById('ibov');
-        ibovVariation.innerHTML = json.public_repos;
+        const dolarReal = json.USDBRL
+
+        const dolarMax = document.getElementById('dolMax');
+        const dolarMin = document.getElementById('dolMin');
+
+        dolarMax.innerHTML = `R$${parseFloat(dolarReal.high).toFixed(2)}`;
+        dolarMin.innerHTML = `R$${parseFloat(dolarReal.low).toFixed(2)}`;
     })
 })
 

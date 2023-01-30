@@ -10,9 +10,10 @@
     @media (max-width: 767px) {
         .nav {
             &__list {
-                padding: 6px;
+                padding: 10px;
                 padding-bottom: 16px;
                 width: 100%;
+                background-image: linear-gradient(to right, variaveis.$corRoxa, variaveis.$corRoxaEscuro);
     
                 &__item {
                     margin-right: 16px;
@@ -35,6 +36,12 @@
         background-image: linear-gradient(to right, variaveis.$corRoxa, variaveis.$corFundoLink);
         width: 63.2%;
         margin: 0 auto;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+            background-image: linear-gradient(to right, variaveis.$corRoxa, variaveis.$corRoxaEscuro);
+            padding-top: 18px;
+        }
 
         &__item {
             margin-right: 36px;                

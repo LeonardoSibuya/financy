@@ -140,18 +140,24 @@
     <div class="container" id="market">
         <section class="market">
             <h2 class="market__title">
-                Acompanhe suas ações em tempo real
+                Acompanhe suas moedas e ações em tempo real
             </h2>
             <div class="market__acao" data-tab-id="bloqueado">
                 <h3 class="market__acao__title">
                     <img class="image" src="dist/images/star-icon.png" alt="">
-                    Ibovespa (IBOV)
+                    Dolar em Real ($ / r$)
                 </h3>
                 <div class="market__acao__variation">
-                    <div class="market__acao__variation__atual">
-                        Variação atual:
+                    <div class="market__acao__variation__coin">
+                        Valor máximo do dia:
                     </div>
-                    <span class="market__acao__variation__number" id="ibov"></span>
+                    <span class="market__acao__variation__number market__acao__variation__number--max" id="dolMax"></span>
+                </div>
+                <div class="market__acao__variation">
+                    <div class="market__acao__variation__coin">
+                        Valor mínimo do dia:
+                    </div>
+                    <span class="market__acao__variation__number market__acao__variation__number--min" id="dolMin"></span>
                 </div>
             </div>
             <div class="market__acao market__acao--is-disable" data-tab-id="variations">
@@ -233,7 +239,7 @@
                     Cadastre-se em nossa Newsletter
                 </h2>
                 <p class="form__info__text">
-                    Receba novidades do mercado financeiro diariamente <br> em seu e-mail, fácil, rápido e sem custos! 
+                    Receba novidades do mercado financeiro <br> diariamente em seu e-mail, fácil, rápido e sem custos! 
                 </p>
                 <form class="form__info__formulario" id="form-cadastro">
                     <label for="name" class="form__info__formulario__label">Nome:</label>

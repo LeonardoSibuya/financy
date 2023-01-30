@@ -72,6 +72,10 @@
                 margin-bottom: 12px;
                 text-shadow: 1px 1px 1px #000;
 
+                @media (max-width: 1024px) {
+                    font-size: 23px;
+                }
+
                 @media (max-width: 767px) {
                     font-size: 18px;
                 }
@@ -125,6 +129,10 @@
         letter-spacing: 3px;
         font-weight: bolder;
 
+        @media (max-width: 1024px) {
+            width: 50%;
+        }
+
         @media (max-width: 767px) {
             padding: 12px;
             margin-top: 40px;
@@ -137,6 +145,10 @@
         background-color: variaveis.$corLetra;
         letter-spacing: 16px;
         width: 35%;
+
+        @media (max-width: 1024px) {
+            width: 60%;
+        }
 
         @media (max-width: 767px) {
             width: 100%;

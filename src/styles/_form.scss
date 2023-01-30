@@ -27,6 +27,10 @@
         margin-bottom: 36px;
         text-shadow: 1px 1px 1px #000;
 
+        @media (max-width: 1024px) {
+            font-size: 22px;
+        }
+
         @media (max-width: 767px) {
             font-size: 20px;
             margin-bottom: 24px;
@@ -93,6 +97,11 @@
                 letter-spacing: 3px;
                 margin: auto;
 
+                @media (max-width: 1024px) {
+                    width: 80%;
+                    font-size: 14px;
+                }
+
                 @media (max-width: 767px) {
                     padding: 12px;
                     margin-top: 40px;
@@ -105,6 +114,11 @@
                     background-color: variaveis.$corLetra;
                     letter-spacing: 12px;
                     width: 70%;
+
+                    @media (max-width: 1024px) {
+                        width: 100%;
+                        letter-spacing: 8px;
+                    }
 
                     @media (max-width: 767px) {
                         width: 100%;
@@ -120,6 +134,10 @@
                 letter-spacing: 2px;
                 display: none;
 
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+
                 @media (max-width: 767px) {
                     font-size: 14px;
                 }
@@ -133,6 +151,10 @@
 
     &__image {
         max-width: 400px;
+
+        @media (max-width: 1024px) {
+            max-width: 340px;
+        }
 
         @media (max-width: 767px) {
             max-width: 200px;

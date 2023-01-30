@@ -20,6 +20,10 @@
         margin-bottom: 36px;
         text-shadow: 1px 1px 1px #000;
 
+        @media (max-width: 1024px) {
+            font-size: 23px;
+        }
+
         @media (max-width: 767px) {
             font-size: 20px;
             margin-bottom: 24px;
